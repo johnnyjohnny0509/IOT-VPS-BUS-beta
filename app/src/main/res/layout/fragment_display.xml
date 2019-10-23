@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_below="@+id/Step2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRouteId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/NoPlateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_plate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/tvClock" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/label_route"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_below="@+id/NoPlateLabel" />
+
+    <TextView
+        android:id="@+id/RouteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/label_route"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/NoPlateLabel" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/current"
+        android:onClick="startStopTrip"
+        android:text="@string/button_start"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <TextView
+        android:id="@+id/Step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/step2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <TextView
+        android:id="@+id/Step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/step3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <TextView
+        android:id="@+id/tvBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_noBusWarning"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_below="@+id/tvClock"
+        android:layout_toRightOf="@+id/RouteLabel"
+        android:layout_toEndOf="@+id/RouteLabel" />
+
+    <TextView
+        android:id="@+id/tvRouteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/route_noRouteWarning"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_below="@+id/tvBus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Order ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/RouteLabel"
+        android:layout_toRightOf="@+id/tvRouteId"
+        android:layout_toEndOf="@+id/tvRouteId" />
+
+
+</RelativeLayout>
+

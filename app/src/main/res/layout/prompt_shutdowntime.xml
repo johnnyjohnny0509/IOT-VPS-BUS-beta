@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/Hours"
+        android:id="@+id/spinner_hours"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_minute"
+        android:entries="@array/Minute"
+        android:layout_gravity="end"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/spinner_hours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Prompt_Hours"
+        android:id="@+id/textView"
+        android:layout_marginStart="36dp"
+        android:layout_below="@+id/spinner_hours"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Prompt_Minute"
+        android:layout_marginStart="43dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignStart="@+id/spinner_minute" />
+</RelativeLayout>

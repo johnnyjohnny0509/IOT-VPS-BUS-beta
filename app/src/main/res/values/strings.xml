@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TARUC Bus Tracking System</string>
+    <string name="action_settings">Bus Plate Number Setting</string>
+    <string name="action_state">State Setting</string>
+    <string name="action_timer">Set Turn Off Time</string>
+    <string name="action_autostop">Set Auto Stop Trip Interval</string>
+
+    <string name="number_plate">No. Bus :</string>
+
+    <string name="label_route">Destinasi :</string>
+
+    <string name="step1">Destinasi</string>
+    <string name="step2">2: Tekan butang Hijau untuk mula</string>
+    <string name="step3">3: Tekan butang Merah untuk berhenti</string>
+
+    <string name ="button_start">Mula</string>
+    <string name ="button_stop">Berhenti</string>
+
+    <string name="route_noRouteWarning">Destinasi :</string>
+
+    <string name="toastText_noRouteWarning">Sila pilih destinasi</string>
+    <string name="toastText_isTrackingWarning">Please stop your tracking before you set ur bus number</string>
+
+    <string name="alertDialog_busSetting_title">Set bus plate number</string>
+    <string name="alertDialog_busSetting_positiveButton">Confirm</string>
+
+    <string name="alertDialog_stateSetting_title">Set TARUC branch</string>
+    <string name="alertDialog_stateSetting_positiveButton">Confirm</string>
+
+    <string name="alertDialog_authentication_title">Enter Admin Password</string>
+    <string name="alertDialog_authentication_positiveButton">Enter</string>
+    <string name="alertDialog_authentication_negativeButton">Cancel</string>
+    <string name="alertDialog_authentication_loginFailedMessage">Invalid Entry</string>
+
+    <string name="alertDialog_time_title">Enter Shutdown Time</string>
+    <string name="alertDialog_time_positiveButton">Enter</string>
+    <string name="alertDialog_time_negativeButton">Cancel</string>
+
+    <string name="alertDialog_autostop_title">Set Auto Stop Trip Interval (Min)</string>
+    <string name="alertDialog_autostop_positiveButton">Confirm</string>
+
+    <string name="label_noBusWarning">No Bus is selected</string>
+    <string name="Prompt_Hours">Enter Hours</string>
+    <string name="Prompt_Minute">Enter Minute</string>
+    <string name="time">Time</string>
+    <string name="order_id">Order ID :</string>
+    <string name="version">Version</string>
+    <string name="auto_stop_message">Berhenti secara automatik apabila bas tidak bergerak</string>
+    <string name="berhenti_speech">Bas telah berhenti</string>
+    <string name="action_update">Update</string>
+    <string name="speed">KM/H</string>
+    <string name="no_internet">Tiada Internet.</string>
+    <string-array name="Autostop_interval">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <string-array name="Hours">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+
+    </string-array>
+
+    <string-array name="Minute">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+
+    </string-array>
+
+
+
+
+</resources>

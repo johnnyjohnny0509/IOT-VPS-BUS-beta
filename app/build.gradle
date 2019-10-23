@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'iot_vps_bus'
+            keyPassword '53300setapak'
+
+            storePassword '53300setapak'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId 'my.edu.tarc.tarucbustrackingsystem'
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 11
+        versionName '1.0.11'
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    dependencies {
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation('org.eclipse.paho:org.eclipse.paho.android.service:1.0.2') {
+            exclude module: 'support-v4'
+        }
+    }
+
+    repositories {
+        maven {
+            url "https://repo.eclipse.org/content/repositories/paho-releases/"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}
